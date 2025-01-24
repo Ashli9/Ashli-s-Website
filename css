@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  color: red;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: black;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 40px;
+  margin-right: 10px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.hamburger {
+  display: none;
+  background: none;
+  color: white;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: url('your-hero-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 3rem;
+}
+
+/* Section Styles */
+.section {
+  padding: 50px 20px;
+}
+.icon {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* Grid Styles */
+.skills-grid, .projects-grid {
+  display: grid;
+  gap: 20px;
+}
+.skills-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.projects-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.skill-box, .project-box {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  color: black;
+  border: 1px solid red;
+  transition: 0.3s;
+}
+.skill-box:hover, .project-box:hover {
+  background: red;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skill-box, .project-box {
+    background: orange;
+  }
+}
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .skill-box, .project-box {
+    background: yellow;
+  }
+}
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .skill-box, .project-box {
+    background: green;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+  }
+  .hamburger:focus + .nav-links, .nav-links:hover {
+    display: flex;
+  }
+}
