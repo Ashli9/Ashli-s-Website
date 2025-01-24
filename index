@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashli Grant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="your-logo.png" alt="Logo" class="logo">
+      <h1>Ashli Grant</h1>
+    </div>
+    <nav class="navbar">
+      <button class="hamburger" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to My Portfolio</h2>
+  </section>
+
+  <section id="resume" class="section">
+    <h2><img src="your-logo.png" alt="Icon" class="icon"> Resume</h2>
+    <p>Your resume content goes here...</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2><img src="your-logo.png" alt="Icon" class="icon"> About Me</h2>
+    <p>Your about me content goes here...</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2><img src="your-logo.png" alt="Icon" class="icon"> Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">Skill 1</div>
+      <div class="skill-box">Skill 2</div>
+      <div class="skill-box">Skill 3</div>
+      <div class="skill-box">Skill 4</div>
+      <div class="skill-box">Skill 5</div>
+      <div class="skill-box">Skill 6</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2><img src="your-logo.png" alt="Icon" class="icon"> Projects</h2>
+    <div class="projects-grid">
+      <div class="project-box">Project 1</div>
+      <div class="project-box">Project 2</div>
+      <div class="project-box">Project 3</div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2><img src="your-logo.png" alt="Icon" class="icon"> Contact</h2>
+    <p>Your contact details go here...</p>
+  </section>
+</body>
+</html>
