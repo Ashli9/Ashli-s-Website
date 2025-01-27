@@ -8,6 +8,7 @@ body {
 h1, h2 {
   font-family: 'Roboto', sans-serif;
   color: red;
+  margin: 0;
 }
 .header {
   display: flex;
@@ -50,7 +51,7 @@ h1, h2 {
 
 /* Hero Section */
 .hero {
-  background: url('your-hero-image.jpg') no-repeat center center/cover;
+  background: url('images/hero-ag.jpg') no-repeat center center/cover; /* Adjusted image path */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -59,11 +60,14 @@ h1, h2 {
 }
 .hero h2 {
   font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Added shadow for readability */
 }
 
 /* Section Styles */
 .section {
   padding: 50px 20px;
+  margin: 0 auto;
 }
 .icon {
   width: 25px;
@@ -75,6 +79,7 @@ h1, h2 {
 .skills-grid, .projects-grid {
   display: grid;
   gap: 20px;
+  justify-items: center; /* Center items */
 }
 .skills-grid {
   grid-template-columns: repeat(3, 1fr);
@@ -89,6 +94,8 @@ h1, h2 {
   color: black;
   border: 1px solid red;
   transition: 0.3s;
+  border-radius: 8px; /* Added rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 .skill-box img, .project-box img {
   width: 80%; /* Adjust image width */
@@ -100,6 +107,7 @@ h1, h2 {
   background: red;
   color: white;
   transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
 /* Responsive Adjustments */
@@ -134,8 +142,13 @@ h1, h2 {
     top: 60px;
     right: 20px;
     padding: 10px;
+    width: 200px; /* Ensure it's wide enough */
   }
   .hamburger:focus + .nav-links, .nav-links:hover {
     display: flex;
+  }
+  .nav-links a {
+    padding: 10px;
+    text-align: center; /* Center text in the nav */
   }
 }
