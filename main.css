@@ -22,6 +22,7 @@ h1, h2 {
 }
 .logo {
   width: 40px;
+  height: 40px; /* Ensure logo stays proportional */
   margin-right: 10px;
 }
 .navbar {
@@ -65,7 +66,8 @@ h1, h2 {
   padding: 50px 20px;
 }
 .icon {
-  width: 30px;
+  width: 25px;
+  height: 25px; /* Constrain icon size */
   margin-right: 10px;
 }
 
@@ -88,6 +90,12 @@ h1, h2 {
   border: 1px solid red;
   transition: 0.3s;
 }
+.skill-box img, .project-box img {
+  width: 80%; /* Adjust image width */
+  max-width: 150px; /* Prevent oversized images */
+  height: auto;
+  margin: 10px auto;
+}
 .skill-box:hover, .project-box:hover {
   background: red;
   color: white;
@@ -99,9 +107,6 @@ h1, h2 {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .skill-box, .project-box {
-    background: orange;
-  }
 }
 @media (max-width: 768px) {
   .skills-grid {
@@ -112,7 +117,7 @@ h1, h2 {
   }
 }
 @media (max-width: 480px) {
-  .skills-grid {
+  .skills-grid, .projects-grid {
     grid-template-columns: 1fr;
   }
   .skill-box, .project-box {
